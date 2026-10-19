@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Mohan Midathana, a UI/UX designer and frontend developer creating accessible digital experiences.">
   <title>Mohan Midathana | UI/UX Developer</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -13,7 +14,7 @@
 
     <button id="menuToggle" aria-label="Toggle menu">☰</button>
 
-    <nav id="navLinks">
+    <nav id="navLinks" aria-label="Main navigation">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -24,110 +25,190 @@
 
   <main>
     <section id="home" class="hero">
-      <p class="eyebrow">UI/UX DESIGNER & FRONTEND DEVELOPER</p>
-      <h1>Hi, I'm Mohan.<br>
-        I build <span>digital experiences.</span>
-      </h1>
-      <p>
-        I design intuitive interfaces and build responsive websites
-        using modern web technologies.
-      </p>
-      <a class="btn" href="#projects">Explore My Work ↗</a>
-      <a class="btn secondary" href="#contact">Contact Me</a>
+      <div class="hero-copy">
+        <p class="eyebrow">UI/UX DESIGNER & FRONTEND DEVELOPER</p>
+        <h1>Hi, I'm <span>Mohan</span>.<br>
+          I build <span>digital experiences</span> that feel effortless.</h1>
+        <p>
+          I design intuitive interfaces and craft responsive, human-centered web experiences
+          with thoughtful detail, clean structure, and modern front-end execution.
+        </p>
+
+        <div class="cta-group">
+          <a class="btn" href="#projects">Explore My Work ↗</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+
+        <ul class="quick-stats" aria-label="Portfolio stats">
+          <li><strong>2+</strong><span>Years learning & building</span></li>
+          <li><strong>10+</strong><span>Design & web projects</span></li>
+          <li><strong>100%</strong><span>Focused on user experience</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-label="Profile image">
+        <div class="profile-card">
+          <img src="Mohan.jpg.jpg" alt="Mohan Midathana portrait">
+          <div class="status-badge">
+            <span class="dot"></span>
+            Available for freelance work
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="about" class="section">
       <p class="eyebrow">01 / ABOUT</p>
-      <h2>About Me<span>.</span></h2>
-      <p>
-        I'm Mohan Midathana, a UI/UX Designer and aspiring Frontend
-        Developer with a B.Sc. in Computer Science.
-        I enjoy creating clean, accessible and responsive digital
-        experiences while continuously improving my skills.
-      </p>
+      <div class="section-heading">
+        <h2>About Me<span>.</span></h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm Mohan Midathana, a UI/UX Designer and frontend developer with a B.Sc. in
+            Computer Science. I enjoy building clean, accessible, and responsive digital
+            experiences that connect product thinking with visual clarity.
+          </p>
+          <p>
+            My work blends design strategy, interface storytelling, and front-end implementation,
+            helping ideas become intuitive experiences across mobile, web, and product design.
+          </p>
+        </div>
+
+        <div class="info-panel">
+          <div>
+            <span class="info-label">Location</span>
+            <strong>India</strong>
+          </div>
+          <div>
+            <span class="info-label">Specialty</span>
+            <strong>UI/UX + Frontend</strong>
+          </div>
+          <div>
+            <span class="info-label">Focus</span>
+            <strong>Responsive design</strong>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="skills" class="section">
       <p class="eyebrow">02 / TOOLKIT</p>
       <h2>My Skills<span>.</span></h2>
 
-      <div class="grid">
+      <div class="grid skills-grid">
         <article class="card">
           <h3>UI/UX Design</h3>
-          <p>Figma, Wireframing, Prototyping, Adobe XD</p>
+          <p>Wireframing, prototyping, user flow design, UI systems, and design thinking.</p>
         </article>
         <article class="card">
           <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, React basics, Bootstrap</p>
+          <p>HTML5, CSS3, JavaScript, responsive layouts, component styling, and interaction design.</p>
         </article>
         <article class="card">
           <h3>Creative Tools</h3>
-          <p>Photoshop, Illustrator, Canva, WordPress</p>
+          <p>Figma, Adobe XD, Photoshop, Illustrator, Canva, and visual asset creation.</p>
         </article>
         <article class="card">
-          <h3>Development Tools</h3>
-          <p>Git, GitHub, VS Code</p>
+          <h3>Workflow</h3>
+          <p>Git, GitHub, VS Code, collaboration, iteration, and clean product handoff.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <p class="eyebrow">03 / PROCESS</p>
+      <h2>How I work<span>.</span></h2>
+      <div class="grid process-grid">
+        <article class="card process-card">
+          <span class="step">01</span>
+          <h3>Discovery</h3>
+          <p>Understand goals, target users, and product needs before I design anything.</p>
+        </article>
+        <article class="card process-card">
+          <span class="step">02</span>
+          <h3>Design</h3>
+          <p>Create wireframes and interfaces that are intuitive, clean, and aligned to the brand.</p>
+        </article>
+        <article class="card process-card">
+          <span class="step">03</span>
+          <h3>Build</h3>
+          <p>Translate the final design into responsive, functional experiences with strong front-end quality.</p>
         </article>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <p class="eyebrow">03 / SELECTED WORK</p>
+      <p class="eyebrow">04 / SELECTED WORK</p>
       <h2>My Projects<span>.</span></h2>
 
-      <div class="filters">
+      <div class="filters" aria-label="Project filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="design">UI/UX</button>
         <button class="filter-btn" data-filter="development">Development</button>
         <button class="filter-btn" data-filter="web">Websites</button>
       </div>
 
-      <div class="grid">
+      <div class="grid project-grid">
         <article class="card project" data-category="design">
-          <h3>Delivery App UI</h3>
-          <p>Food delivery app user flows and interface design.</p>
-          <span>Figma · UI/UX</span>
+          <div class="project-thumb thumb-one"></div>
+          <div class="project-copy">
+            <h3>Delivery App UI</h3>
+            <p>Food delivery app concept focused on intuitive flows and clean product storytelling.</p>
+            <span>Figma · UI/UX</span>
+          </div>
         </article>
 
         <article class="card project" data-category="design">
-          <h3>Edu Learn</h3>
-          <p>Educational platform design and prototyping.</p>
-          <span>Figma · Prototyping</span>
+          <div class="project-thumb thumb-two"></div>
+          <div class="project-copy">
+            <h3>Edu Learn</h3>
+            <p>Educational platform design with engaging onboarding and simplified learning paths.</p>
+            <span>Figma · Prototyping</span>
+          </div>
         </article>
 
         <article class="card project" data-category="development">
-          <h3>Kanban Board</h3>
-          <p>Task management interface using React.</p>
-          <span>React · JavaScript · CSS</span>
+          <div class="project-thumb thumb-three"></div>
+          <div class="project-copy">
+            <h3>Kanban Board</h3>
+            <p>Task management interface built to support productivity and clear visual hierarchy.</p>
+            <span>React · JavaScript · CSS</span>
+          </div>
         </article>
 
         <article class="card project" data-category="web">
-          <h3>Restaurant Website</h3>
-          <p>A responsive website concept for a restaurant.</p>
-          <span>HTML · CSS · WordPress</span>
+          <div class="project-thumb thumb-four"></div>
+          <div class="project-copy">
+            <h3>Restaurant Website</h3>
+            <p>Responsive web concept designed for brand storytelling, menu clarity, and conversions.</p>
+            <span>HTML · CSS · WordPress</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <p class="eyebrow">04 / CONTACT</p>
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">05 / CONTACT</p>
       <h2>Let's work together<span>.</span></h2>
 
-      <form id="contactForm">
-        <input name="name" placeholder="Your name" required>
-        <input name="email" type="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button class="btn" type="submit">Send Message ↗</button>
-      </form>
+      <div class="contact-layout">
+        <form id="contactForm">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button class="btn" type="submit">Send Message ↗</button>
+        </form>
 
-      <p>Email: mmuiuxdeveloper@gmail.com</p>
-      <p>
-        <a href="https://www.linkedin.com/in/mohan-uiux"
-           target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        &nbsp; · &nbsp;
-        <a href="https://github.com/Mohanuiuxdeveloper"
-           target="_blank" rel="noreferrer">GitHub ↗</a>
-      </p>
+        <aside class="contact-details">
+          <p>Email: mmuiuxdeveloper@gmail.com</p>
+          <p>
+            <a href="https://www.linkedin.com/in/mohan-uiux" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            &nbsp; · &nbsp;
+            <a href="https://github.com/Mohanuiuxdeveloper" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </p>
+        </aside>
+      </div>
     </section>
   </main>
 
